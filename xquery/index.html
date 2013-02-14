@@ -1,0 +1,43 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>KML Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+	<link rel="icon" type="image/png" href="/static/images/dinoicon-small.png">
+	<link rel="apple-touch-icon" href="/static/images/dinoicon.png">
+	
+  <link rel="stylesheet"  href="/static/css/client.css" />
+
+</head>
+<body id="login">
+	
+	
+	<script type="text/x-handlebars">
+	
+	
+		
+		<p>Geospatial Status: {{App.Geo.status}}</p>
+		<p>Geospatial Lat: {{App.Geo.lat}}</p>
+		<p>Geospatial Lon: {{App.Geo.lon}}</p>
+		<p>Geospatial Acc: {{App.Geo.accuracy}}</p>
+		
+	</script>
+		
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="static/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+	<script src="static/js/libs/ember-0.9.8.1.min.js"></script>	
+  <script src="static/js/App.js"></script>
+  <script src="static/js/Geo.js"></script>
+
+</body>
+
+
+</html>
